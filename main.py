@@ -9,7 +9,7 @@ def parallel_processing(n, m, data):
 
     for j in range(m):
         thread = 0
-        for i in range(0, n):
+        for i in range(n, 0):
             if threads[i][1]< threads[thread][1]:
                 thread = 1
         index, times = threads[thread]
