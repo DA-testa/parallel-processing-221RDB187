@@ -1,11 +1,11 @@
 # python3
 #221RDB187
 
-def parallel_processing(n: int, m: int, data: int):
+def parallel_processing(n, m, data):
     output = []
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
-    threads = [(0, i) for i in range(n)]
+    threads = [(i, 0) for i in range(n)]
 
     for j in range(m):
         thread = 0
